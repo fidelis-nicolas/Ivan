@@ -8,7 +8,16 @@ public class Human {
     public String complexion;
     public String country;
 
-    public void eat(){
+    public Human(String name, int age, String sex, String complexion, String country){
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.complexion = complexion;
+        this.country = country;
+    }
+
+
+    private void eat(){
         System.out.println("Eating...");
     }
 

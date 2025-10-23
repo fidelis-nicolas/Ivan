@@ -2,18 +2,10 @@ package oop;
 
 public class HumanApp {
     public static void main(String[] args) {
-        Human firstHuman = new Human(); // Instance of the Human class
-
-        firstHuman.age = 30;
-        firstHuman.name = "Ivan";
-        firstHuman.sex = "Male";
-        firstHuman.country = "Ukraine";
-        firstHuman.complexion = "white";
-
+        Human firstHuman = new Human("Ivan", 67, "male", "White", "Ukraine");// Instance of the Human class
+        //Human secondHuman = new Human();
         System.out.println(firstHuman.humanInfo());
-       String dance = firstHuman.dance("Pop");
 
-        System.out.println(dance);
 
     }
 }
