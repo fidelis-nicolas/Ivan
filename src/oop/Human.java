@@ -48,7 +48,37 @@ public class Human {
     //TODO: Complete
 
 
+    public int getAge() {
+        return age;
+    }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getComplexion() {
+        return complexion;
+    }
+
+    public void setComplexion(String complexion) {
+        this.complexion = complexion;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
     private void eat(){
         System.out.println("Eating...");
@@ -64,7 +94,12 @@ public class Human {
 
     public String humanInfo(){
         StringBuilder builder = new StringBuilder();
-        builder.append("Name: " + name);
+        builder.append("Name: " + name + "; ");
+        builder.append("Age: " + age + "; ");
+        builder.append("Sex: " + sex + "; ");
+        builder.append("Complexion: " + complexion + "; ");
+        builder.append("Country: " + country + ". ");
+
 
         return builder.toString();
     }
